@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pattern3</title>
+</head>
+
+<body>
+  <!-- <script type="text/javascript">
+    var row = parseInt(prompt("Please enter the row:"));
+    for (var i = 1; i <= row; i++) {
+      for (var j1 = 1; j1 <= (row - i); j1++) {
+        document.write("#");
+      }
+      for (var j2 = 1; j2 <= i; j2++) {
+        document.write("*");
+      }
+      document.write("<br>");
+    }
+  </script> -->
+
+
+  <script type="text/javascript">
+    var row = parseInt(prompt("Please enter the row:"));
+    for (var i = 1; i <= row; i++) {
+      for (var j = row - 1; j >= i; j--) {
+        document.write("#");
+      }
+      for (var k = 1; k <= i; k++) {
+        document.write("*");
+      }
+      document.write("<br>");
+    }
+  </script>
+
+
+</body>
+
+</html>

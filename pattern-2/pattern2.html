@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pattern2</title>
+</head>
+
+<body>
+
+  <!-- <script>
+      var row = parseInt(prompt("Please enter the row:"));
+      for (var i = 1; i <= row; i++) {
+        for (var j = 1; j <= (row+1)-i; j++) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script> -->
+
+  <script>
+    var row = parseInt(prompt("Please enter the row:"));
+    for (var i = 1; i <= row; i++) {
+      for (var j = row; j>=i; j--) {
+        document.write("*");
+      }
+      document.write("<br>");
+    }
+  </script>
+ 
+</body>
+
+</html>

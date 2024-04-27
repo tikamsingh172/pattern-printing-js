@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pyramid pattern</title>
+</head>
+
+<body>
+  <script>
+    var row = prompt("Please enter the row:");
+    var z = 1;
+    for (var i = 1; i <= row; i++) {
+      for (var j = row - 1; j >= i; j--) {
+        document.write("#");
+      }
+      for (var k = 1; k <= z; k++) {
+        document.write("*");
+      }
+
+      z += 2;
+      document.write("<br>");
+    }
+  </script>
+</body>
+
+</html>

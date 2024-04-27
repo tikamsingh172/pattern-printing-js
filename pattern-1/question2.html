@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question2</title>
+</head>
+
+<body>
+    <h1>Mirror Right Angel Triange Pattern</h1>
+    <pre>
+    *
+   **
+  ***
+ ****
+*****
+    </pre>
+    <input type="number" id="row">
+    <button type="button" onclick="print()">Print</button>
+
+    <script>
+        function print() {
+            const row = document.getElementById("row").value;
+            for (let i = row; i >= 1; i--) {
+                for (let j = 1; j < i; j++) {
+                    document.write(" &nbsp; ");
+                }
+                for (let k = row; k >= i; k--) {
+                    document.write("*");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+     <script>
+        let y = 10;
+        let x = 10;
+
+        let str = "";
+
+        for (let i = 1; i < y; i++) {
+            for (let j = 1; j < x; j++) {
+                if (i + j >= y) {
+                    str = str.concat("*");
+                } else {
+                    str = str.concat(" ")
+                }
+            }
+            str = str.concat("\n")
+        }
+
+        console.log(str)
+    </script>
+</body>
+
+</html>

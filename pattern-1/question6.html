@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question6</title>
+</head>
+
+<body>
+    <script>
+        // Square Pattern
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                document.write(" * ");
+            }
+            document.write("<br>");
+        }
+    </script>
+    <br><br><br>
+    <script>
+        //Hollow Square Pattern
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                if (i == 1 || i == 5 || j == 1 || j == 5) {
+                    document.write("*");
+                } else {
+                    document.write(" &nbsp;");
+                }
+            }
+            document.write("<br>");
+        }
+    </script>
+    <br><br><br>
+    <script>
+        // Hollow Square Pattern With Diagonal
+        for (let i = 1; i <= 10; i++) {
+            for (let j = 1; j <= 10; j++) {
+                if(i==1||i==10||j==1||j==10||i==j||j==10-i+1){
+                document.write(" * ");
+                }else{
+                    document.write(" &nbsp;&nbsp; ");
+                }
+            }
+            document.write("<br>");
+        }
+    </script>
+    <br><br><br>
+    <script>
+        // Rhombus Square Pattern
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 5; j > i; j--) {
+                document.write(" &nbsp; ");
+            }
+            for (let k = 1; k <= 5; k++) {
+                document.write(" * ");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>
